@@ -1,0 +1,515 @@
+body {
+    background-color: rgba(252, 245, 235, 1);
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+button {
+    flex-direction: row;
+    margin: 20px;
+    cursor: default;
+    outline: none;
+}
+.lpheader {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(252, 245, 235, 1); */
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    z-index: 1;
+}
+.firstRowGroup{
+    margin: 20px;
+    margin-right: 5px;
+    margin-bottom: 0 auto;
+    padding: 10px;
+    background-color: rgba(252, 245, 235, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+#exit{
+    width: 8vh;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(186, 75, 47, 1);
+    background-color: rgba(186, 75, 47, 0.05);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.LandingPage {
+    background-color: rgba(186, 75, 47, 0.05);
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    height: 40px;
+    font-size: medium;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.lpheader {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.landingPageHeader {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: none;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(252, 245, 235, 1);
+}
+.lpContainer {
+    display: flex;
+    position: relative; /* Add position relative */
+    overflow: hidden; /* Prevent overflow */
+    margin-left: 180px; /* Add margin to account for sidebar */
+}
+.lpsideBar {
+    width: 180px;
+    height: 100vh;
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(186, 75, 47, 0.05);
+    
+}
+.lptop {
+    display: flex;
+    margin: 5px;
+    padding: 55px;
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+.lpimages {
+    height: auto;
+    flex-grow: 1;
+    overflow: hidden;
+    max-width: calc(100%); /* Adjust width to prevent overlap */
+}
+
+img {
+    width: 100%;
+    height: 81vh; /* Adjust height to maintain aspect ratio */
+    display: block;
+}
+.logo {
+    float: left;
+    margin-right: 90vh;
+}
+.lpdown {
+    position: absolute;
+    bottom: 0;
+}
+.lpside {
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    margin-top: auto; /* Push to the bottom */
+    margin-bottom: 10px; /* Add some space from the bottom */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    height: 30px;
+    font-size: small;
+    letter-spacing: 2px;
+    display: flex;
+    color: rgba(186, 75, 47, 1);
+    background-color: rgba(186, 75, 47, 0.05);
+}
+
+a{
+    cursor: default;
+    text-decoration: none;
+    outline: none;
+}
+.LandingPage:hover, .lpside:hover {
+    background-color: rgba(186, 75, 47, 0.5);
+}
+.menuheader {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.searchTools{
+    position: absolute;
+    bottom: 80%;
+    left: 2%;
+    padding: 5px;
+    background-color: rgba(115, 94, 89, 1);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 71%;
+    margin-left: 35px;
+}
+.searchTools input[type="text"]{
+    width: 100%;
+    font-size: x-large;
+    color: rgba(252, 245, 235, 1);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.searchTools input[type="text"]::placeholder {
+    color: rgba(252, 245, 235, 1);
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}
+
+a.cont {
+    position: absolute;
+    bottom: 20px;
+    left: 90%;
+    background-color: rgba(215, 162, 145, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+a.done {
+    position: absolute;
+    bottom: 20px;
+    left: 90%;
+    background-color: rgba(115, 94, 89, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+a.help {
+    position: absolute;
+    bottom: 80%;
+    left: 77%;
+    background-color: rgba(115, 94, 89, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+a.more {
+    position: absolute;
+    bottom: 110px;
+    left: 45%;
+    background-color: rgba(115, 94, 89, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+a.more:hover {
+    background-color: rgba(115, 94, 89, 0.5);
+}
+a.okay {
+    position: absolute;
+    bottom: 20px;
+    left: 90%;
+    background-color: white;
+    color: rgba(115, 94, 89, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+a.okay:hover {
+    background-color: rgba(252, 245, 235, 0.5);
+}
+h1 {
+    font-weight: bold;
+    margin: 1%;
+    color: rgba(252, 245, 235, 1);
+}
+
+form {
+    position: absolute;
+    margin: 2%;
+    background-color: rgba(115, 94, 89, 0.5);
+    width: 40%;
+    height: 70%;
+    padding: 2%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.ratedetails {  
+    position: absolute;
+    top: 0;
+    left: 115%;  
+    background-color: rgba(115, 94, 89, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: fit-content;
+    max-height: 90%;
+    padding: 2%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.see-more {
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    left: 163%;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    cursor: default;
+    font-weight: bold;
+    font-size: large;
+    color: rgba(115, 94, 89, 1);
+    transition: 0 5ms;
+}
+.see-more:hover{
+    color: rgb(187, 170, 166);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow-y: hidden;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-height: 80%;
+    overflow-y: auto;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+
+.label-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgba(115, 94, 89, 1);
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+}
+
+.about-border {
+    display: block;
+    width: 90%;
+    height: 3px;
+    background: rgba(115, 94, 89, 0.5);
+    margin: 20px auto;
+}
+
+h2 {
+    margin-top: 5%;
+    color: rgba(115, 94, 89, 1);
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.card {
+    color: rgba(252, 245, 235, 1);
+    position: relative;
+    display: contents;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+   
+.star {
+    font-size: 75px;
+    cursor: default;
+}
+   
+.star.one {
+    color: rgb(255, 0, 0);
+}
+   
+.star.two {
+    color: rgb(255, 106, 0);
+}
+   
+.star.three {
+    color: rgb(251, 255, 120);
+}
+   
+.star.four {
+    color: rgb(255, 255, 0);
+}
+   
+.star.five {
+    color: rgb(24, 159, 14);
+}
+  
+textarea {
+    margin-top: 5%;
+    background-color: rgba(115, 94, 89, 1);
+    border-radius: 10px;
+    padding: 2%;
+    outline: none;
+    border: none;
+    color: rgba(252, 245, 235, 1);
+    font-size: large;
+    height: 100px;
+    width: 95%;
+    resize: none; /* Optional: to prevent resizing */
+    display: block;
+}
+
+textarea::placeholder {
+    color: rgba(252, 245, 235, 1); /* White color for placeholders */
+}
+
+.names {
+    display: flex;
+    align-items: center;
+}
+
+.names textarea {
+    flex: 1;
+    margin-top: 2%;
+    height: 20px;
+    width: 10%;
+    padding: 2%;
+    display: block;
+    color: rgba(252, 245, 235, 1);  
+    background-color: rgba(115, 94, 89, 1);
+    outline: none;
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.names a {
+    margin-top: 3%;
+    margin-left: 5px; /* Added some spacing between the textarea and the icon */
+    color: rgba(115, 94, 89, 1); /* Adjust color as needed */
+}
+
+.material-icons.submit-icon {
+    font-size: 36px; /* Adjust the size as needed */
+}
+.material-icons.submit-icon.disabled {
+    color: gray; /* Gray out the icon to indicate it is disabled */
+    cursor: no-drop;    /* Prevent clicking */
+}
+
+/* Styles for the feedback entries */
+.feedback-entry {
+    background-color: rgba(252, 245, 235, 1); /* Light background for readability */
+    margin: 3%;
+    padding: 2%; /* Space inside the box */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);    /* Slight shadow for depth */
+    color: rgba(115, 94, 89, 1); /* Text color matching your theme */
+    text-align: left; /* Align text to the left */
+    border-radius: 10px;
+}
+
+/* Styles for the name */
+.feedback-entry strong {
+    font-size: x-large; /* Larger font size for the name */
+    color: rgba(115, 94, 89, 1); /* Text color */
+    margin-bottom: 5%; /* Space below the name */
+}
+
+/* Styles for the rating */
+.feedback-entry .rating {
+    color: rgba(115, 94, 89, 1); /* Text color */
+    margin-top: 10px; /* Space below the rating */
+    margin-bottom: 10px;
+}
+
+/* Styles for the feedback text */
+.feedback-entry .feedback-text {
+    font-size: large; /* Slightly smaller font size */
+    color: rgba(115, 94, 89, 1); /* Text color */
+    margin-bottom: 10px; /* Space below the feedback text */
+}
+
+/* Adjust the size of the stars in the feedback entries */
+.feedback-entry .star {
+    font-size: 25px; /* Adjust this size as needed */
+    cursor: default; /* Remove the pointer cursor */
+}
+
+#submitFeedback{
+    cursor: pointer;
+}

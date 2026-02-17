@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lic.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+    <a href="licadddetails.html"></a>
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Admin!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/Admin/Tools/tools.html">Tools/Equipment</a>
+            <a href="/Admin/Status/status.html">Status</a>
+            <a href="/Admin/Availability/availability.html">Availability</a>
+            <a href="/Admin/Faculty/faculty.html">Faculty</a>
+            <a href="/Admin/History/history.html">History</a>
+            <a href="/Admin/Damaged/damaged.html">Damaged</a>
+            <a href="/Admin/LIC/lic.html" class="active">Lab-In-Charge</a>
+        </div>
+        <div class="navContent">
+            <div class="searchTools">
+                <input type="text" placeholder="This is a search bar ...">
+                <div class="addbutton">
+                    <button id="addButton">Add LIC</button>
+                </div>
+            </div>
+            <div class="Liccontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Laboratory in-charge</th>
+                            <th>Code</th>
+                            <th>Email Address</th>
+                            <th>Course & Year</th>
+                        </tr>
+                    </thead>
+                    <tbody id="licLists">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="lic.js"></script>
+</html>

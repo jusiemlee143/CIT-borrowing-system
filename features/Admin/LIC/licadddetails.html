@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="licAddDetails.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Admin!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/Admin/Tools/tools.html">Tools/Equipment</a>
+            <a href="/Admin/Status/status.html">Status</a>
+            <a href="/Admin/Availability/availability.html">Availability</a>
+            <a href="/Admin/Faculty/faculty.html">Faculty</a>
+            <a href="/Admin/History/history.html">History</a>
+            <a href="/Admin/Damaged/damaged.html">Damaged</a>
+            <a href="/Admin/LIC/lic.html" class="active">Lab-In-Charge</a>
+        </div>
+        <div class="navContent">
+            <form id="AddLic" class="addLic" enctype="multipart/form-data">
+                <p>ADD LABORATORY IN-CHARGE</p>
+                <div class="LicDetails">
+                    <!-- <input type="file" id="profileImage" name="profileImage" accept="image/*"> -->
+
+                    <div class="profile">
+                        <input type="file" id="profilePic" name="profilePic" style="display: none;" accept="image/*">
+                        <img id="profileImage" src="#" alt="PP">
+                        <label for="profilePic" class="btnprofileAdd"><span class="fluent--camera-add-48-regular"></span></label>
+                    </div> 
+
+                    <div class="licInputs">
+                        <label for="licName">Name:</label>
+                        <input id="licName" type="text" required>
+                        <label for="licBirthday">Birthday:</label>
+                        <input id="licBirthday" type="date" required>
+                    </div>
+
+                    <div class="licInputs">
+                        <label for="licEmail">Email:</label>
+                        <input id="licEmail" type="text" required>
+                        <label for="courseYear">Course & Year:</label>
+                        <input id="courseYear" type="text" required>
+                    </div>
+    
+                    <div class="licInputs">
+                        <label for="idNumber">ID Number:</label>
+                        <input id="idNumber" type="text" required>
+                        <button class="codeBtn">Generate Code</button>
+                        <div id="codeGenerator"></div>
+                        
+                    </div>
+                    
+                    <div class="facultyButton">
+                        <button id="add" type="button">Add</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="licAddDetails.js"></script>
+</body>
+</html>

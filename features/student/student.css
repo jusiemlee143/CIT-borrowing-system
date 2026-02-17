@@ -1,0 +1,305 @@
+body {
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    height: 0 auto;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(186, 75, 47, 0.05);
+}
+.lpheader {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(252, 245, 235, 1); */
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    z-index: 1;
+}
+img {
+    width: 100%;
+    height: 77vh; /* Adjust height to maintain aspect ratio */
+    display: block;
+}
+.logo {
+    margin-top: 5px;
+    float: left;
+    margin-right: 20px;
+}
+.heading {
+    padding: 10px;
+    border-bottom: 1px solid rgba(186, 75, 47, 1);
+    margin: 0;
+    font-weight: bold;
+    font-size: 5vh;
+    color: rgba(186, 75, 47, 1);
+    letter-spacing: 15px;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+.rowContainer {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.firstRowGroup{
+    margin: 20px;
+    margin-right: 5px;
+    margin-bottom: 0 auto;
+    padding: 10px;
+    background-color: rgba(252, 245, 235, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#exit{
+    width: 8vh;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(186, 75, 47, 1);
+    background-color: rgba(186, 75, 47, 0.05);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#activityTitle{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 95%;
+}
+
+label {
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(186, 75, 47, 1);
+}
+
+input, #selectSection{
+    flex: 1;
+    background-color: rgba(186, 75, 47, 0.05);
+    border: none;
+    border-radius: 5px;
+    height: fit-content;
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+    font-weight: lighter;
+    outline: none;
+    padding: 5px;
+}
+#selectSection{
+    background-color: transparent;
+    font-weight: lighter;
+}
+input#section {
+    width: fit-content;
+    background-color: rgba(252, 245, 235, 1);
+}
+input#groupNumber {
+    width: 50px;
+    background-color: rgba(252, 245, 235, 1);
+}
+
+input#date {
+    width: fit-content;
+    background-color: rgba(252, 245, 235, 1);
+}
+input#name {
+    width: fit-content;
+    background-color: rgba(252, 245, 235, 1);
+}
+input#title {
+    width: fit-content;
+    background-color: rgba(252, 245, 235, 1);
+}
+
+#submitButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(252, 245, 235, 1);
+    font-size: larger;
+    font-weight: bold;
+    color: rgba(186, 75, 47, 1);
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+    .firstRowGroup {
+        width: 90%;
+    }
+
+    input#name, input#title {
+        width: 100%;
+    }
+}
+.content{
+    margin: 20px;
+    background-color: rgba(252, 245, 235, 1);
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+.studentContent {
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    overflow-x: hidden;
+    width: 80%;
+}
+tbody td input{
+    margin: 0;
+    width: calc(100% - 10px);
+    text-Align: center;
+}
+tbody {
+    height: 95%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(186, 75, 47, 0.05);
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+}
+.studentContent table {
+    flex: 1;
+}
+.nameMembers {
+    background-color: rgba(252, 245, 235, 1);
+    width: 35%;
+    color: rgba(186, 75, 47, 1);
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px;
+    text-decoration: underline;
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+.nameMembers div{
+    background-color: rgba(186, 75, 47, 0.05);
+    border-radius: 5px;
+}
+.nameMembers input, #addButtonName{
+    margin: 0 0 8.5px 0;
+    width: calc(100% - 10px);
+    height: 38px;
+    font-weight: normal;
+    font-size: large;
+    text-align: center;
+    border-radius: 5px;
+}
+#addButtonName {
+    margin-bottom: 10px;
+    background: linear-gradient(to top, rgba(252, 245, 235, 1), rgba(186, 75, 47, 0.05));
+    color: hsl(0, 10%, 60%);
+    border: none;
+    cursor: pointer;
+}
+.check-button {
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: medium;   
+}
+#names {
+    margin-top: 20px;
+    display: block;
+    align-items: center;
+    position: relative;
+}
+.instructorBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.instructorBox select, .instructorBox h4 {
+    font-size: large;
+}
+.instructorBox select{
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: rgba(252, 245, 235, 1);
+    border-radius: 5px;
+    border: none;
+    color: rgba(186, 75, 47, 1);
+    text-align: center;
+    padding: 5px;
+    outline: none;
+}
+.instructorBox h4 {
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: rgba(186, 75, 47, 1);
+}
+td:nth-child(1){
+    width: 10px;
+    background-color: rgba(252, 245, 235, 1);
+}
+td:nth-child(1):hover{
+    cursor: auto;
+}
+.delete-button {
+    margin: 0;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(186, 75, 47, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.quantityCell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 7px;
+    border-radius: 5px;
+}
+.quantityButton{
+    width: 20%;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+}
+th[colspan="1"] {
+    width: 25%;
+}
+th[colspan="2"] {
+    width: 65%;
+}
+th[colspan="3"] {
+    width: 3%;
+    position: relative;
+}
+th {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: rgba(186, 75, 47, 1);
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+  }

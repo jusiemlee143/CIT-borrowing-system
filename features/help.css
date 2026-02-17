@@ -1,0 +1,92 @@
+
+.image {
+    position: relative; /* Keep the relative positioning */
+    text-align: center;
+    color: #d7a291;
+}
+.overlay {
+    position: absolute; /* Add absolute positioning to the overlay wrapper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.containerGroup {
+    height: 32px;
+    width: 45%;
+    border: 2px solid rgba(115, 94, 89, 0.5);
+    padding: 7px;
+    margin: 8px;
+    background-color: rgba(115, 94, 89, 0.05);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0; 
+    margin-right: 250px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.containerGroup:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+.containerGroup p{
+    font-size: medium;
+    color: rgba(115, 94, 89, 1);
+    font-style: normal;
+    align-items: center;
+}
+.overlay {
+    position: absolute; /* Add absolute positioning to the overlay wrapper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.InfoBox {
+  width: 27%;
+  padding: 1%;
+  margin-bottom: 17%;
+  background-color: rgba(115, 94, 89, 1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  margin-right: 30px;
+  margin-left: 1000px;
+  float: right;
+  position: absolute;
+  top: 28%;
+  height: 40%;
+}
+.InfoBox p{
+    color: #f7f7f7;
+}
+.Question {
+    font-weight: bold;
+    margin: 5px;
+    text-align: left;
+    color: rgba(115, 94, 89, 1);
+    font-size: 20px;
+}
+.about-border {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #f7f7f7;
+    margin: 5px auto;
+}
+.content {
+    padding: 1%;
+    font-size: 16px;
+    text-align: justify;
+}

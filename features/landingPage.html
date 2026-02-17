@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> StudentLanding Page</title>
+    <link rel="stylesheet" href="/landingPage.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <div class="landingPageHeader">
+        <div class="lpheader">            
+                <div class="logo">
+                    <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+                </div> 
+            <a href="/student/studentHomePage.html" title="Goes to Student Page">
+                <button id="student" class="LandingPage">STUDENT</button>
+            </a>
+            <!-- <a href="/auth/loginPage.html" title="Goes to Admin Page">
+                <button id="admin" class="LandingPage">ADMIN</button>
+            </a> -->
+            <a href="/auth/loginPage.html" title="Goes to Lab-in-Charge Page">
+                <button id="lab-in-charge" class="LandingPage">LAB-IN-CHARGE</button>
+            </a>
+        </div>
+    </div>
+    <div class="lpsideBar">
+        <div class="lptop">
+            <label>MENU</label>
+        </div>
+        <div class="lpdown">
+            <a href="/help.html" title="Goes to Help Page">
+                <button id="lphelp" class="lpside">Help</button>
+            </a>
+            <a href="/rate.html" title="Goes to Support Page">
+                <button id="lpsupport" class="lpside">Rate Us</button>
+            </a>
+            <a href="/about.html" title="Goes to About Us Page">
+                <button id="lpabout" class="lpside">About Us</button>
+            </a>
+            <a href="/contact.html" title="Goes to Contact Us Page">
+                <button id="lpcontact" class="lpside">Contact Us</button>
+            </a>
+        </div>
+        
+        
+        <!-- Sidebar content here -->
+    </div>
+    <div class="lpContainer">
+        <div class="lpimages swiper-container">
+            <div class="swiper-wrapper" aria-live="off">
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1586256053828-a36b572ab01d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1583199873815-b58ce30591ea?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1631378297854-185cff6b0986?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1649959265040-2b87be9074e4?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1642229408339-572fa3328d10?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 5"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1562877773-a37120131ec4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 6"></div>
+                <!-- Add more slides as needed -->
+            </div>            
+            <!-- Add pagination -->
+            <div class="swiper-pagination">
+                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="landingPage.js"></script>
+</body>
+</html>
+

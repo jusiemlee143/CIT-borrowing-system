@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Faculty</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/faculty/faculty.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Laboratory in-charge!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/lab-in-charge/navContents/tools/tools.html">Tools/Equipment</a>
+            <a href="/lab-in-charge/navContents/borrowing/borrowing.html">Borrowing</a>
+            <a href="/lab-in-charge/navContents/status/status.html">Status</a>
+            <a href="/lab-in-charge/navContents/availability/availability.html">Availability</a>
+            <a href="/lab-in-charge/navContents/faculty/faculty.html" class="active">Faculty</a>
+            <a href="/lab-in-charge/navContents/history/history.html">History</a>
+            <a href="/lab-in-charge/navContents/damaged/damaged.html">Damaged</a>
+        </div>
+        <div class="navContent">
+            <div class="facultyHeader">
+                <div class="searchTools">
+                    <input type="text" placeholder="Search for faculty...">
+                </div>
+                
+            </div>
+            <div class="facultyContent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name of Instructors</th>                                        
+                            <th>ID Number</th>                 
+                        </tr>
+                    </thead>
+                    <tbody id="facultyList">
+                        <!-- <tr>
+                            <td><a href="/lab-in-charge/navContents/faculty/facultydetails.html">Avery Yshie Cahilig</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="/lab-in-charge/navContents/faculty/facultydetails.html">Jenver Vince Inojales</a></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="faculty.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="/lab-in-charge/navContents/borrowing/borrowingDetails.css">
+        <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+    </head>
+    <main>
+        <body>
+            <div class="lpheader">            
+                <div class="logo">
+                    <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+                </div>
+                <div class="bstitle">
+                    <h1 class="heading">Welcome, Laboratory in-charge!</h1>
+                </div>
+                <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                    <div>Log out</div>
+                </a>
+            </div>
+            <div class="navbar">
+                <a href="/lab-in-charge/navContents/tools/tools.html">Tools/Equipment</a>
+            <a href="/lab-in-charge/navContents/borrowing/borrowing.html" class="active">Borrowing</a>
+            <a href="/lab-in-charge/navContents/status/status.html">Status</a>
+            <a href="/lab-in-charge/navContents/availability/availability.html">Availability</a>
+            <a href="/lab-in-charge/navContents/faculty/faculty.html">Faculty</a>
+            <a href="/lab-in-charge/navContents/history/history.html">History</a>
+            <a href="/lab-in-charge/navContents/damaged/damaged.html">Damaged</a>
+            </div>
+            <div class="navContent">
+                <div class="detailsHeader">
+                    BORROWING DETAILS
+                </div>
+                <div class="details">
+                    <div class="borrowingHeader">
+                        <div class="borrowingDetails">
+                            <label>Borrower</label>
+                            <div id="borrowerName"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Section</label>
+                            <div id="section"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Group #</label>
+                            <div id="groupNumber"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Date Borrowed</label>
+                            <div id="dateBorrowed"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Instructor</label>
+                            <div id="instructorName"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Activity Title</label>
+                            <div id="activityTitle"></div>
+                        </div>
+                    </div>
+                    <div class="borrowed">
+                        <div class="borrowContent">
+                            <table>
+                                <thead>
+                                    <tr class="tableHeader">
+                                        <th>Quantity</th>
+                                        <th>Tools/Equipment</th>
+                                        <th>Name of Members</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td>1</td>
+                                        <td>Trainer</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </main>
+    <script src="borrowingDetails.js"></script>
+</html>

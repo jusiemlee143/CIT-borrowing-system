@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/tools/tools.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Laboratory in-charge!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/lab-in-charge/navContents/tools/tools.html" class="active">Tools/Equipment</a>
+            <a href="/lab-in-charge/navContents/borrowing/borrowing.html">Borrowing</a>
+            <a href="/lab-in-charge/navContents/status/status.html">Status</a>
+            <a href="/lab-in-charge/navContents/availability/availability.html">Availability</a>
+            <a href="/lab-in-charge/navContents/faculty/faculty.html">Faculty</a>
+            <a href="/lab-in-charge/navContents/history/history.html">History</a>
+            <a href="/lab-in-charge/navContents/damaged/damaged.html">Damaged</a>
+        </div>
+        <div class="navContent">
+            <div class="contentHeader">
+                <div class="searchTools">
+                    <input type="text" placeholder="Search for tools and equipment...">
+                </div>
+            </div>
+            <div class="content">
+                <div class="searchContents">
+                    <div>
+                        <h2>Tools/Equipment</h2>
+                    </div>
+                    <ul id="toolList">
+                        <!--List of Tools-->
+                    </ul>
+                </div>
+                <form class="toolsequip" id="ToolsEquip" method="post">
+                    <h2 class="addHeader">Add Tools/Equipment</h2>
+                    <div class="imageBox">
+                        <img id="toolImage" src="/images/UnknownImage.jpg" alt="Your Image">
+                    </div>
+                    <input type="file" id="toolPic" name="toolPic" accept="image/*" class="custom-file-input" required>
+                    <label for="toolPic" id="imageLabel" class="custom-file-label">Choose Image</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Tool/Equipment Name" required>
+                    <input type="text" id="description" name="description" placeholder="Enter description" required>
+                    <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity" required>
+                    <input type="number" id="price" name="price" min="1" placeholder="Enter Price" required>
+                    <input id="submit" type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="tools.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgba(252, 245, 235, 1); */
+    background-color: rgba(252, 245, 235, 1);
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    overflow: hidden;
+}
+main{
+    text-align: center;
+    justify-content: center;
+}
+.lpheader {
+    margin: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    z-index: 1;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 77vh; /* Adjust height to maintain aspect ratio */
+    display: block;
+}
+.logo {
+    margin-top: 5px;
+    float: left;
+    margin-right: 20px;
+}
+.heading {
+    padding: 10px;
+    border-bottom: 1px solid rgba(186, 75, 47, 1);
+    margin: 0;
+    font-weight: bold;
+    font-size: 5vh;
+    color: rgba(186, 75, 47, 1);
+    letter-spacing: 15px;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.firstRowGroup{
+    margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(186, 75, 47, 0.05);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#exit{
+    width: 8vh;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.both {
+    display: flex;
+    justify-content: space-around;
+}
+form.login {
+    background-color: rgba(186, 75, 47, 0.05);
+    width: 450px; /* Adjust width as needed */
+    height: 375px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.login h2{
+    align-items: center;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    color: rgba(186, 75, 47, 1);
+}
+.login .inputBox input, button{
+    width: 350px;
+    height: 35px;
+    padding: 0.25em;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(186, 75, 47, 1);
+    color: rgba(252, 245, 235, 1);
+    font-size: large;
+    outline: none;
+}
+.login .inputBox input[type="text"]::placeholder,
+.login .inputBox input[type="password"]::placeholder,
+.login .inputBox input[type="email"]::placeholder {
+    color: rgba(252, 245, 235, 1); /* Change placeholder text color */
+}
+.login .Signin input {
+    margin-top: 30px;
+    width: 80px;
+    height: 35px;
+    background-color: rgba(186, 75, 47, 1);
+    color: rgba(252, 245, 235, 1);
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login .inputBox button{
+    margin-top: 10px;
+}
+.login .inputBox input[type="submit"], button {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 170px;
+}
+.login .forgotPass{
+    margin-left: 7vh;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: left;
+}
+.login .Signup{
+    color: rgba(186, 75, 47, 1);
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+}
+.login .AuthSign {
+    color: rgba(186, 75, 47, 1);
+    display: flex;
+    justify-content: space-around;
+}
+.login .forgotPass a, .Signup a, .AuthSign a{
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(186, 75, 47, 1);
+    text-decoration: underline;
+}
+.login .inputBox button {
+    width: 100px;
+    height: 35px;
+    background-color: rgba(252, 245, 235, 1);
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+  
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.modal button {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

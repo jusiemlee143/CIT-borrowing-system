@@ -1,0 +1,53 @@
+.toolsBox{
+    border-top: 2px solid rgb(175, 172, 172);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgba(186, 75, 47, 1);
+    align-items: flex-start;
+}
+.toolsBox th[colspan="2"]{
+    text-align: center;
+}
+.toolsBox .damageTable{
+    margin-right: 20px;
+    /* background-color: blue; */
+    width: 50%;
+    display: none;
+}
+.toolsBox table td {
+    padding-top: 10px; /* Adjust the value as needed */
+}
+.toolsBox .lostTable{
+    /* background-color: blue; */
+    width: 50%;
+    display: none;
+}
+.tableSeparator {
+    border: none; 
+    border-top: 2px solid rgb(175, 172, 172);
+    margin: 20px 0;
+    margin-left: 20px;
+}
+.submitBox{
+    height: fit-content;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+}
+.submitBox button{
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(112, 50, 35, 0.063);
+    color: rgba(186, 75, 47, 1);
+    border: none;
+    border-radius: 5px;
+}
+.submitBox button:hover{
+    background-color: rgba(212, 103, 75, 0.153);
+}

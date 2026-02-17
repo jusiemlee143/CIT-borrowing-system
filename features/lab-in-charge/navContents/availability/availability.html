@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/availability/availability.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Laboratory in-charge!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/lab-in-charge/navContents/tools/tools.html">Tools/Equipment</a>
+            <a href="/lab-in-charge/navContents/borrowing/borrowing.html">Borrowing</a>
+            <a href="/lab-in-charge/navContents/status/status.html">Status</a>
+            <a href="/lab-in-charge/navContents/availability/availability.html" class="active">Availability</a>
+            <a href="/lab-in-charge/navContents/faculty/faculty.html">Faculty</a>
+            <a href="/lab-in-charge/navContents/history/history.html">History</a>
+            <a href="/lab-in-charge/navContents/damaged/damaged.html">Damaged</a>
+        </div>
+        <div class="navContent">
+            <div class="searchTools">
+                <input type="text" placeholder="Search for tools and equipment...">
+                <div class="showAvailable">
+                    <select id="show-select" name="Show">
+                        <option value="all">Show All</option>
+                        <option value="available">Available</option>
+                        <option value="unavailable">Unavailable</option>
+                    </select>
+                </div>
+            </div>
+            <div class="availabilityHeader">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tools/Equipment</th>
+                            <th colspan="1">Availability</th>
+                            <th colspan="2">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="availabilityBody">
+                        <!-- Tools Availability 
+                            <tr>
+                            <td>Trainer</td>
+                            <td>
+                                <select name="availability">
+                                    <option value="unavailable">Unavailable</option>
+                                    <option value="available">Available</option>
+                                </select>
+                            </td>
+                            <td>13</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="availability.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+    <link rel="stylesheet" href="/student/studentHomePage.css">
+</head>
+<body>
+    <div class="hpheader">            
+        <div class="logo">
+            <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+        </div>
+        <div class="bstitle">
+            <h1 class="heading">STUDENT'S HOMEPAGE</h1>
+        </div>
+        <a class="container" href="/landingPage.html">
+            <button class="logOut">
+                EXIT
+            </button>
+        </a>
+    </div>
+    <div class="nav">
+        <div class="header">
+            <div id="greeting">Welcome, Students!</div>
+        </div>
+        <div class="searchTools">
+            <input type="text" placeholder="Search for tools and equipments...">
+            <div class="showAvailable">
+                <select id="show-select" name="Show">
+                    <option value="all">Show All</option>
+                    <option value="available">Available</option>
+                    <option value="unavailable">Unavailable</option>
+                </select>
+            </div>
+            <div id="borrowerSlip">
+                BORROWER SLIP
+            </div>
+        </div>
+        <div class="studentHeader">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th><th></th>
+                        <th>Tools/Equipments</th>
+                        <th colspan="1">Quantity</th>
+                        <th colspan="2">Availability</th>
+                    </tr>
+                </thead>
+                <tbody id="studentBody">
+                    <!-- List of Tools -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="studentHomePage.js" defer></script>
+</body>
+</html>

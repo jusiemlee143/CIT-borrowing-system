@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(252, 245, 235, 1);
+    box-sizing: border-box;
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    margin: 10px;
+}
+.header{
+    margin-bottom: 10px;
+}
+.header #greeting{
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+    font-weight: bold;
+    padding: 2px;
+    letter-spacing: 2px;
+    display: contents;
+}
+.header .logOut{
+    border-radius: 5px;
+    font-size: large;
+    background-color: rgba(186, 75, 47, 0.05);
+    border: none;
+    float: right;
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar {
+    background-color: rgba(186, 75, 47, 0.05);
+    border-radius: 5px;
+    padding: 0.25em;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.navbar a {
+    font-weight: bold;
+    background-color: rgba(186, 75, 47, 0.05);
+    border-radius: 5px;
+    display: block;
+    padding: 0.25em;
+    margin: 0.25em;
+    text-align: center;
+    color: rgba(186, 75, 47, 1);
+    text-decoration: none;
+    transition: background, border 250ms ease-out;
+    flex: 1;
+}
+.navbar a:hover,
+.navbar a.active{
+    background-color: rgba(244, 106, 71, 0.146);
+    transition: background,border 250ms ease-out;
+}
+.navContent, .nav{
+    background-color: rgba(186, 75, 47, 0.05);
+    height: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+}
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+}

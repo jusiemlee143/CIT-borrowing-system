@@ -1,0 +1,221 @@
+#borrowerSlip{
+    background-color: rgba(252, 245, 235, 1);
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    top: 0;
+    margin-top: 210px;
+}
+.nav {
+    margin-top: 10px;
+    height: fit-content;
+}
+
+#toolList li {
+    position: relative;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.searchTools{
+    margin-left: 10px;
+    display: flex;
+    border: none;
+    height: 40px;
+    width: 90%;
+}
+.searchTools input[type="text"] {
+    width: 80%;
+    font-size: 1.2em;
+    color: rgba(186, 75, 47, 1);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(252, 245, 235, 1);
+}
+
+.searchTools input[type="text"]::placeholder {
+    color: rgba(186, 75, 47, 1);
+}
+.hpheader {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(252, 245, 235, 1); */
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    z-index: 1;
+}
+img {
+    width: 100%;
+    height: 77vh; /* Adjust height to maintain aspect ratio */
+    display: block;
+}
+.logo {
+    margin-top: 5px;
+    float: left;
+    margin-right: 20px;
+}
+.heading {
+    padding: 10px;
+    border-bottom: 1px solid rgba(186, 75, 47, 1);
+    font-weight: bold;
+    font-size: 5vh;
+    color: rgba(186, 75, 47, 1);
+    letter-spacing: 15px;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+#borrowerSlip:hover {
+    background-color: rgba(186, 75, 47, 0.5);
+}
+.container .logOut {
+    border-radius: 5px;
+    font-size: large;
+    background-color: rgba(186, 75, 47, 0.05);
+    border: none;
+    float: right;
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    cursor: pointer;
+}
+.logOut {
+    height: 5vh;
+    width: 10vh;
+}
+.nav .header {
+    margin: auto;
+    padding: 10px;
+}
+#show-select {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: rgba(186, 75, 47, 1);
+    width: 10em;
+    margin-left: 5px;
+    font-size: medium;
+    background-color:rgba(252, 245, 235, 1);
+}
+.studentHeader {
+    background-color: rgba(252, 245, 235, 1);
+    height: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    justify-content: space-evenly;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+table {
+    width: 99%;
+    margin: 5px;
+    padding: 5px;
+    border-spacing: 8px;
+    justify-content: space-evenly;
+    background-color: none;
+}
+th {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgba(186, 75, 47, 1);
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+td {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+    background-color: rgba(186, 75, 47, 0.05);
+}
+td select {
+    font-size: large;
+    border: none;
+    width: 100%;
+    color: rgba(186, 75, 47, 1);
+    background-color: rgba(186, 75, 47, 0.5);
+}
+th[colspan="1"] {
+    width: 25%;
+}
+th[colspan="2"] {
+    width: 30%;
+}
+td:nth-child(3) {
+    border-right: none;
+
+}
+tbody {
+    height: 95%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(252, 245, 235, 1);
+}
+
+#studentBody td:nth-child(2) select{
+    width: 80%;
+    
+}
+.confirm-button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+td:nth-child(1){
+    width: 20px;
+}
+td:nth-child(2){
+    width: 10px;
+}
+td:nth-child(1):hover{
+    background-color: rgba(186, 75, 47, 0.05);
+    cursor: auto;
+}
+.plus-button {
+    margin: 0;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(186, 75, 47, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.inputCell input{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(186, 75, 47, 0.05);
+    height: 20px;
+    font-weight: bold;
+    font-size: medium;
+    color: rgba(186, 75, 47, 1);
+    outline: none;
+}
+.message{
+    text-align: center;
+    color: rgba(186, 75, 47, 1);
+    font-size: larger;
+    letter-spacing: 5px;
+}

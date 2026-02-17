@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/faculty/faculty.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+    <link rel="stylesheet" href="/Admin/Faculty/facultydetails.css">
+  </head>
+<body>
+  <main>
+    <div class="lpheader">            
+      <div class="logo">
+          <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+      </div>
+      <div class="bstitle">
+          <h1 class="heading">Welcome, Admin!</h1>
+      </div>
+      <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+          <div>Log out</div>
+      </a>
+    </div>
+    <div class="navbar">
+      <a href="/Admin/Tools/tools.html">Tools/Equipment</a>
+      <a href="/Admin/Status/status.html">Status</a>
+      <a href="/Admin/Availability/availability.html">Availability</a>
+      <a href="/Admin/Faculty/faculty.html" class="active">Faculty</a>
+      <a href="/Admin/History/history.html">History</a>
+      <a href="/Admin/Damaged/damaged.html">Damaged</a>
+      <a href="/Admin/LIC/lic.html">Lab-In-Charge</a>
+    </div>
+      <div class="navContent">
+        <h1>FACULTY DETAILS</h1>
+        <div id="nameDetails" class="rowDetails">
+          <div id="name" class="details">
+            <label>Name:</label>
+            <input id="nameFaculty">
+          </div>
+          <div id="id" class="details">
+            <label>ID Number:</label>
+            <input id="idFaculty">
+          </div>
+          <div id="email" class="details">
+            <label>Email Address:</label>
+            <input id="emailFaculty">
+          </div>
+        </div>
+        <form id="formSchedule" class="scheduleBox">
+            <div class="actionBox">
+                <button id="editBtn">Edit</button>
+                <button id="saveBtn">Save</button>
+                <button id="deleteBtn">Delete</button>
+            </div>
+            <table class="scheduleTableForm">
+                <thead>
+                    <tr>
+                        <th>Subject Code</th>
+                        <th>Section</th>
+                        <th>Day</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Schedule List -->
+                </tbody>
+            </table>
+        </form>
+        <div>
+          <h2>CLASS SCHEDULE</h2>
+        </div>
+          <div class="facultyDetails">
+            <table class="tableDetails" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <th class="tableHeading">&nbsp;</th>
+                        <th class="tableHeading">Monday</th>
+                        <th class="tableHeading">Tuesday</th>
+                        <th class="tableHeading">Wednesday</th>
+                        <th class="tableHeading">Thursday</th>
+                        <th class="tableHeading">Friday</th>
+                        <th class="tableHeading">Saturday</th>
+                        <th class="tableHeading">Sunday</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">07:00 AM</font>
+                            <br>
+                            07:30 AM
+                            <br>
+                            <font style="font-size:9px;">07:59 AM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">08:00 AM</font>
+                            <br>
+                            08:30 AM
+                            <br>
+                            <font style="font-size:9px;">08:59 AM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">09:00 AM</font>
+                            <br>
+                            09:30 AM
+                            <br>
+                            <font style="font-size:9px;">09:59 AM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">10:00 AM</font>
+                            <br>
+                            10:30 AM
+                            <br>
+                            <font style="font-size:9px;">10:59 AM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">11:00 AM</font>
+                            <br>
+                            11:30 AM
+                            <br>
+                            <font style="font-size:9px;">11:59 AM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">12:00 PM</font>
+                            <br>
+                            12:30 PM
+                            <br>
+                            <font style="font-size:9px;">12:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">01:00 PM</font>
+                            <br>
+                            01:30 PM
+                            <br>
+                            <font style="font-size:9px;">01:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">02:00 PM</font>
+                            <br>
+                            02:30 PM
+                            <br>
+                            <font style="font-size:9px;">02:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">03:00 PM</font>
+                            <br>
+                            03:30 PM
+                            <br>
+                            <font style="font-size:9px;">03:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">04:00 PM</font>
+                            <br>
+                            04:30 PM
+                            <br>
+                            <font style="font-size:9px;">04:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">05:00 PM</font>
+                            <br>
+                            05:30 PM
+                            <br>
+                            <font style="font-size:9px;">05:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">06:00 PM</font>
+                            <br>
+                            06:30 PM
+                            <br>
+                            <font style="font-size:9px;">06:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">07:00 PM</font>
+                            <br>
+                            07:30 PM
+                            <br>
+                            <font style="font-size:9px;">07:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">08:00 PM</font>
+                            <br>
+                            08:30 PM
+                            <br>
+                            <font style="font-size:9px;">08:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rowStart">
+                            <font style="font-size:9px;">09:00 PM</font>
+                            <br>
+                            09:30 PM
+                            <br>
+                            <font style="font-size:9px;">09:59 PM</font>
+                        </td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                        <td class="tableContent" rowspan="1">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>   
+          </div>
+      </div>
+  </main>
+  <script src="facultydetails.js"></script>
+</body>
+</html>

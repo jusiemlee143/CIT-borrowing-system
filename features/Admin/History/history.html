@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Homepage</title>
+        <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+        <link rel="stylesheet" href="/Admin/History/history.css">
+    </head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Admin!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/Admin/Tools/tools.html">Tools/Equipment</a>
+            <a href="/Admin/Status/status.html">Status</a>
+            <a href="/Admin/Availability/availability.html">Availability</a>
+            <a href="/Admin/Faculty/faculty.html">Faculty</a>
+            <a href="/Admin/History/history.html" class="active">History</a>
+            <a href="/Admin/Damaged/damaged.html">Damaged</a>
+            <a href="/Admin/LIC/lic.html">Lab-In-Charge</a>
+        </div>
+        <div class="navContent">
+            <div class="searchTools">
+                <input type="text" placeholder="Search for borrowers...">
+                <div class="selection">
+                    <select id="sectionSelect">
+                        <option value="" selected>Show All</option>
+                        <option value="H1">H1</option>
+                        <option value="H2">H2</option>
+                        <option value="H3">H3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="historyContent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="Instructor">Name of Borrower</th>
+                            <th>Section</th>
+                            <th>Date Borrowed</th>
+                            <th>Date Returned</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Histort Content -->
+                    </tbody>
+                </table>   
+            </div>   
+        </div>
+    </main>
+    <script src="history.js"></script>
+</body>
+</html>

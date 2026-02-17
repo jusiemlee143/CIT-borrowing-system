@@ -1,0 +1,161 @@
+body {
+    box-sizing: border-box;
+}
+main{
+    text-align: center;
+    justify-content: center;
+}
+.lpheader {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(252, 245, 235, 1); */
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    z-index: 1;
+}
+img {
+    width: 100%;
+    height: 77vh; /* Adjust height to maintain aspect ratio */
+    display: block;
+}
+
+.logo {
+    margin-top: 5px;
+    float: left;
+    margin-right: 20px;
+}
+.heading {
+    margin: 0;
+    font-weight: bold;
+    font-size: 5vh;
+    color: rgba(186, 75, 47, 1);
+    letter-spacing: 10px;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+.firstRowGroup{
+    margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(186, 75, 47, 0.05);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#exit{
+    width: 11vh;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.searchTools{
+    display: flex;
+    margin: 10px;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+.searchTools input[type="text"] {
+    width: 90%;
+    font-size: 1.2em;
+    color: rgba(186, 75, 47, 1);
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(252, 245, 235, 1);
+    outline: none;
+}
+.searchTools input[type="text"]::placeholder {
+    color: rgba(186, 75, 47, 1);
+}
+#show-select {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: rgba(186, 75, 47, 1);
+    width: 100%;
+    margin-left: 5px;
+    font-size: medium;
+    background-color: rgba(252, 245, 235, 1);
+    outline: none;
+}
+.availabilityHeader {
+    background-color: rgba(252, 245, 235, 1);
+    height: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    justify-content: space-evenly;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+table {
+    width: 99%;
+    margin: 5px;
+    padding: 5px;
+    border-spacing: 8px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    background-color: none;
+}
+th {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgba(186, 75, 47, 1);
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+td {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgba(186, 75, 47, 1);
+    font-size: large;
+    background-color: rgba(186, 75, 47, 0.05);
+}
+td select {
+    font-size: large;
+    border: none;
+    width: 100%;
+    color: rgba(186, 75, 47, 1);
+    background-color: transparent;
+}
+th[colspan="1"] {
+    width: 25% auto;
+}
+th[colspan="2"] {
+    width: 25% auto;
+}
+td:nth-child(3) {
+    border-right: none;
+}
+tbody {
+    height: 95%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#availabilityBody td:nth-child(2) select{
+    width: 80%;
+}
+.confirm-button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.message{
+    text-align: center;
+    color: rgba(186, 75, 47, 1);
+    font-size: larger;
+    letter-spacing: 5px;
+}

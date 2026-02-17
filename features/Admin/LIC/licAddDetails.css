@@ -1,0 +1,235 @@
+body{
+    background-color: maroon;
+    box-sizing: border-box;
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    margin: 20px;
+}
+
+.lpheader {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(252, 245, 235, 1); */
+    background-color: rgba(252, 245, 235, 1);
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    z-index: 1;
+}
+img {
+    width: 100%;
+    height: 77vh; /* Adjust height to maintain aspect ratio */
+    display: block;
+}
+.logo {
+    margin-top: 5px;
+    float: left;
+    margin-right: 20px;
+}
+.heading {
+    margin: 0;
+    font-weight: bold;
+    font-size: 5vh;
+    color: rgba(186, 75, 47, 1);
+    letter-spacing: 10px;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+.firstRowGroup{
+    margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(186, 75, 47, 0.05);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#exit{
+    width: 11vh;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+body {
+    box-sizing: border-box;
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+.btnprofileAdd {
+    position: absolute; /* Position the button absolutely */
+    bottom: 1px; /* Adjust bottom position as needed */
+    left: 80px; /* Adjust right position as needed */
+     /* Make the button round */
+    cursor: pointer;
+    z-index: 1; /* Ensure button is above the image */
+}
+
+.profile {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 10px;
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+}
+
+#profileImage {
+    background-color: rgba(186, 75, 47, 0.05);
+    width: 100%;
+    height: 100%;
+    border-radius: 360px;
+    object-fit: cover; /* Ensures the image fits within the container without stretching */
+}
+
+.fluent--camera-add-48-regular {
+    margin: 10px auto;
+    display: flex;
+    width: 2em;
+    height: 2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23000' d='M20.515 7A4.25 4.25 0 0 0 16.8 9.186L15.514 11.5H11.75A5.75 5.75 0 0 0 6 17.25v17A5.75 5.75 0 0 0 11.75 40h11.246a13 13 0 0 1-.756-2.5H11.75a3.25 3.25 0 0 1-3.25-3.25v-17A3.25 3.25 0 0 1 11.75 14h5.235l2-3.6a1.75 1.75 0 0 1 1.53-.9h6.97a1.75 1.75 0 0 1 1.53.9l2 3.6h5.235a3.25 3.25 0 0 1 3.25 3.25v5.55c.882.325 1.72.744 2.5 1.244V17.25a5.75 5.75 0 0 0-5.75-5.75h-3.764L31.2 9.186A4.25 4.25 0 0 0 27.485 7zM24 17a8 8 0 0 1 7.586 5.453c-.815.221-1.598.52-2.34.887a5.5 5.5 0 1 0-6.4 7.039c-.294.772-.517 1.58-.66 2.415A8 8 0 0 1 24 17m22 18c0 6.075-4.925 11-11 11s-11-4.925-11-11s4.925-11 11-11s11 4.925 11 11m-10-6a1 1 0 1 0-2 0v5h-5a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z'/%3E%3C/svg%3E");
+    background-color:rgba(186, 75, 47, 1);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.LicDetails {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.licInputs {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.addLic {
+    background-color: rgba(252, 245, 235, 1);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px; 
+    height: fit-content;   
+}
+
+.LicDetails {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    color: rgba(186, 75, 47, 1);
+    margin-right: 20px; 
+    margin-left: 20px; 
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: medium;
+    font-weight: bold;
+    color:rgba(186, 75, 47, 1);
+    margin-right: 3%;
+    display: inline-block;
+    font-size: larger;
+    text-decoration: underline;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+input, div#codeGenerator{
+    margin-left: 10px;
+    outline: none;
+    width: 30%; 
+    height: 35px; 
+    background-color: rgba(186, 75, 47, 0.05);
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: rgba(186, 75, 47, 1);
+    font-weight: bold;
+    font-size: medium;
+}
+.facultyButton {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+}
+
+button[type="button"] {
+    background-color:rgba(186, 75, 47, 1);
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+    width: fit-content;
+}
+.codeBtn {
+    padding: 5px;
+    cursor: pointer;
+    color: rgba(186, 75, 47, 1);
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    margin: 0 20px;
+}
+input#codeGenerator{
+    cursor: not-allowed;
+    pointer-events: none;
+}
+div#codeGenerator{
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    label {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    input {
+        width: calc(100% - 40px); 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .licInputs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+    }
+
+    .LicDetails {
+        margin-left: 0; 
+    }
+}

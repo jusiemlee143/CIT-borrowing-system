@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Homepage</title>
+        <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+        <link rel="stylesheet" href="/lab-in-charge/navContents/borrowing/borrowingDetails.css">
+        <script src="/Admin/History/historyDetails.js"></script>
+    </head>
+    <main>
+        <body>
+            <div class="lpheader">            
+                <div class="logo">
+                    <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+                </div>
+                <div class="bstitle">
+                    <h1 class="heading">Welcome, Admin!</h1>
+                </div>
+                <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                    <div>Log out</div>
+                </a>
+            </div>
+            <div class="navbar">
+                <a href="/Admin/Tools/tools.html">Tools/Equipment</a>
+                <a href="/Admin/Status/status.html">Status</a>
+                <a href="/Admin/Availability/availability.html">Availability</a>
+                <a href="/Admin/Faculty/faculty.html">Faculty</a>
+                <a href="/Admin/History/history.html" class="active">History</a>
+                <a href="/Admin/Damaged/damaged.html">Damaged</a>
+                <a href="/Admin/LIC/lic.html">Lab-In-Charge</a>
+            </div>
+            <div class="navContent">
+                <div class="detailsHeader">
+                    BORROWING DETAILS
+                </div>
+                <div class="details">
+                    <div class="borrowingHeader">
+                        <div class="borrowingDetails">
+                            <label>Borrower:</label>
+                            <div id="borrowerName"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Section:</label>
+                            <div id="section"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Group #:</label>
+                            <div id="groupNumber"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Date Borrowed:</label>
+                            <div id="dateBorrowed"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Date Returned:</label>
+                            <div id="dateReturned"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Instructor:</label>
+                            <div id="instructorName"></div>
+                        </div>
+                        <div class="borrowingDetails">
+                            <label>Activity Title:</label>
+                            <div id="activityTitle"></div>
+                        </div>
+                    </div>
+                    <div class="borrowed">
+                        <div class="borrowContent">
+                            <table>
+                                <thead>
+                                    <tr class="tableHeader">
+                                        <th>Quantity</th>
+                                        <th>Tools/Equipment</th>
+                                        <th>Name of Members</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td>1</td>
+                                        <td>Trainer</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </main>
+</html>

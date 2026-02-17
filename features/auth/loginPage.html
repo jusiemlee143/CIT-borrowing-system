@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/auth/loginPage.css">
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">WELCOME!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/landingPage.html">
+                <div>BACK</div>
+            </a>
+        </div>
+        <div class="both">
+            <div class="authstyle">
+                <div class="picture">
+                    <img src="https://i.ibb.co/CmWF3WL/tools-borrowing-1-removebg-preview.png" alt="tools" style="width:650px; height:440px;">
+                </div>
+            </div>
+            <form class="login" id="loginAccount" method="post">
+                <h2>LOG IN</h2>
+                <div class="inputBox">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="forgotPass">
+                    <a href="/auth/recoverPage.html">Forgot Password?</a>
+                </div>
+                <div class="Signin">
+                    <input id="submit" type="submit" value="Sign in">
+                </div>
+                <!-- <div class="Signup">
+                    <label>Don't have an account yet?</label>
+                    <a href="/auth/registerPage.html">Sign up</a>
+                </div> -->
+            </form>
+        </div>
+    </main>
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <p>Login As?</p>
+            <button id="adminBtn">Admin</button>
+            <button id="licBtn">Lab-In-Charge</button>
+        </div>
+      </div>
+    <script src="login.js" defer></script>
+</body>
+</html>

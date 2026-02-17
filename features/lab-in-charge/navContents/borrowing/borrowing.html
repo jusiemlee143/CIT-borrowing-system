@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/borrowing/borrowing.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+</head>
+<body>
+    <main>
+        <div class="lpheader">            
+            <div class="logo">
+                <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+            </div>
+            <div class="bstitle">
+                <h1 class="heading">Welcome, Laboratory in-charge!</h1>
+            </div>
+            <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+                <div>Log out</div>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="/lab-in-charge/navContents/tools/tools.html">Tools/Equipment</a>
+            <a href="/lab-in-charge/navContents/borrowing/borrowing.html" class="active">Borrowing</a>
+            <a href="/lab-in-charge/navContents/status/status.html">Status</a>
+            <a href="/lab-in-charge/navContents/availability/availability.html">Availability</a>
+            <a href="/lab-in-charge/navContents/faculty/faculty.html">Faculty</a>
+            <a href="/lab-in-charge/navContents/history/history.html">History</a>
+            <a href="/lab-in-charge/navContents/damaged/damaged.html">Damaged</a>
+        </div>
+        <div class="navContent">
+                <div class="borrowingContent">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="1">Name of Borrower</th>
+                                <th colspan="2">Confirmation</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- <tr>
+                                <td class="borrowerName">Avery Yshie Cahilig</td>
+                                <td>Confirm</td>
+                                <td>Decline</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    <script src="borrowing.js"></script>
+</body>
+</html>

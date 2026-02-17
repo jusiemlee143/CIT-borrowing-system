@@ -1,0 +1,44 @@
+body{
+    height: 90vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: medium;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    color: rgba(186, 75, 47, 1);
+}
+.emailBox{
+    /* background-color: blue; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin-top: 10px;
+    background-color: rgba(186, 75, 47, 1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    cursor: pointer;
+    transition: 0 5ms;
+}
+button:hover{
+    background-color: rgba(186, 75, 47, 0.5);
+}
+#detailsBtn{
+    margin-top: 50px;
+}
+.details{
+    margin-top: 30px;
+}
+h1 {
+    font-size: 34px;
+}
+p {
+    font-size: x-large;
+}

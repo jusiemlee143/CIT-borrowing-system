@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/lab-in-charge/navContents/status/status.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/navStyle.css">
+    <link rel="stylesheet" href="/lab-in-charge/navContents/status/modal.css">
+</head>
+<body>
+    <main>
+      <div class="lpheader">            
+        <div class="logo">
+            <img src="https://i.ibb.co/cbTk669/Untitled-design-removebg-preview.png" alt="logo" style="width:170px; height:135px;">
+        </div>
+        <div class="bstitle">
+            <h1 class="heading">Welcome, Laboratory in-charge!</h1>
+        </div>
+        <a class="firstRowGroup" id="exit" href="/auth/loginPage.html">
+            <div>Log out</div>
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="/lab-in-charge/navContents/tools/tools.html">Tools/Equipment</a>
+          <a href="/lab-in-charge/navContents/borrowing/borrowing.html">Borrowing</a>
+          <a href="/lab-in-charge/navContents/status/status.html" class="active">Status</a>
+          <a href="/lab-in-charge/navContents/availability/availability.html">Availability</a>
+          <a href="/lab-in-charge/navContents/faculty/faculty.html">Faculty</a>
+          <a href="/lab-in-charge/navContents/history/history.html">History</a>
+          <a href="/lab-in-charge/navContents/damaged/damaged.html">Damaged</a>
+      </div>
+      <div class="navContent">
+        <div class="statusContent">
+          <table>
+            <thead>
+              <tr>
+                <th>Name of Borrower</th>
+                <th colspan="1">Status</th>
+                <th colspan="2">Order</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- Contents -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div id="modal" class="modal">
+      <!-- <div class="modal-content">
+          <p>What is the reason for holding this order?</p>
+          <button id="damagedBtn">Damaged</button>
+          <button id="lostBtn">Lost</button>
+      </div> -->
+    </div>
+    <script src="status.js" defer></script>
+  </body>
+</html>
